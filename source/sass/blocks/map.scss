@@ -1,0 +1,15 @@
+.map {
+  width: 100%;
+  max-width: 1440px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.map__wrapper {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+}

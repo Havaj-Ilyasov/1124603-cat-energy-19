@@ -1,0 +1,57 @@
+.food-program {
+  margin-bottom: 28px;
+
+  background-color: $white;
+}
+
+.food-program__wrapper {
+  padding-top: 14px;
+}
+
+.food-program__title {
+  margin-bottom: 25px;
+}
+
+.food-program__intro {
+  max-width: 230px;
+  margin: 0;
+  margin-bottom: 41px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black-two;
+}
+
+@media (min-width: $tablet-width) {
+  .food-program {
+    margin-bottom: 73px;
+  }
+
+  .food-program__wrapper {
+    padding-top: 50px;
+  }
+
+  .food-program__title {
+    margin-bottom: 53px;
+  }
+
+  .food-program__intro {
+    max-width: 365px;
+    margin-bottom: 69px;
+    padding-left: 40px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-program__title {
+    margin-bottom: 56px;
+  }
+
+  .food-program__intro {
+    padding-left: 0;
+  }
+}

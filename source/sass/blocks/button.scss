@@ -1,0 +1,42 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 12px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $white;
+  text-decoration: none;
+  background-color: $leaf;
+}
+
+.button:focus,
+.button:active {
+  color: rgba($color: $white, $alpha: 0.3);
+
+  background-color: $grass;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding-right: 30px;
+    padding-left: 30px;
+
+    font-size: 20px;
+  }
+
+  .button--catalog {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button:hover {
+    background-color: $grass;
+  }
+}

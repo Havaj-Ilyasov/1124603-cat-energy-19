@@ -1,0 +1,15 @@
+.page-title {
+  margin: 0;
+
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: $black-two;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

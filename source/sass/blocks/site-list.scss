@@ -1,0 +1,142 @@
+.site-list {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: $white;
+}
+
+.site-list__item {
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 21px;
+
+  text-align: center;
+
+  border-bottom: 1px solid $white-two;
+}
+
+.site-list__item:first-child {
+  border-top: 1px solid $white-two;
+}
+
+.site-list__link {
+  position: relative;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black-two;
+  text-decoration: none;
+}
+
+.site-list__link--active::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: $leaf;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
+}
+
+.main-nav--nojs .site-list {
+  display: flex;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list {
+    display: none;
+  }
+
+  .main-nav--opened .site-list {
+    display: flex;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item {
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding: 10px 15px;
+
+    border: none;
+  }
+
+  .site-list__item:first-child {
+    border-top: none;
+  }
+
+  // .site-list__item:not(:last-child) {
+  //   margin-right: 35px;
+  // }
+
+  .site-list__link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .site-list__link--active::after {
+    bottom: -5px;
+  }
+
+  .site-list__link:hover,
+  .site-list__link:focus {
+    opacity: 0.6;
+  }
+
+  .site-list__link:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    position: relative;
+    z-index: 1;
+
+    background-color: transparent;
+  }
+
+  .site-list__link {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .index .site-list__link {
+    color: $white;
+  }
+
+  .index .site-list__link--active::after {
+    background-color: $white;
+  }
+
+  .site-list__link:hover,
+  .site-list__link:focus {
+    opacity: 0.6;
+  }
+
+  .site-list__link:active {
+    opacity: 0.3;
+  }
+}
