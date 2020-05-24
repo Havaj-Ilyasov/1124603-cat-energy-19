@@ -1,0 +1,293 @@
+.extra {
+  margin-bottom: 35px;
+}
+
+.extra__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.extra__list {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.extra__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 14px;
+  padding-bottom: 19px;
+
+  border-bottom: 2px solid $white-two;
+}
+
+.extra__item:first-child {
+  border-top: 2px solid $white-two;
+}
+
+.extra__title-layout {
+  position: relative;
+
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 19px;
+}
+
+.extra__title-layout::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  z-index: -1;
+
+  width: 100%;
+  height: 3px;
+
+  background-color: $leaf;
+
+  transform: translateY(-50%);
+}
+
+.extra__title-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.extra__title {
+  margin: 0;
+  padding-right: 25px;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $black-two;
+
+  background-color: $white;
+}
+
+.extra__characteristics {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px;
+}
+
+.extra__characteristics-title {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.extra__characteristics-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $white-twoish-brown;
+}
+
+.extra__characteristics-name,
+.extra__characteristics-price {
+  margin: 0;
+}
+
+.extra__characteristics-name {
+  max-width: 50%;
+}
+
+.extra__characteristics-price {
+  max-width: 35%;
+}
+
+.extra__order {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  text-align: center;
+}
+
+.extra__stock-descr {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .extra {
+    margin-bottom: 75px;
+  }
+
+  .extra__title-layout {
+    margin-bottom: 60px;
+  }
+
+  .extra__title-layout::after {
+    left: 0;
+  }
+
+  .extra__title-wrap {
+    padding-left: 40px;
+  }
+
+  .extra__title {
+    position: relative;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .extra__title::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: -25px;
+
+    width: 27px;
+    height: 15px;
+
+    background-color: $white;
+
+    transform: translateY(-50%);
+  }
+
+  .extra__list {
+    margin-bottom: 60px;
+  }
+
+  .extra__item {
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+
+    border-right: 2px solid $white-two;
+    border-left: 2px solid $white-two;
+  }
+
+  .extra__characteristics {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+  }
+
+  .extra__characteristics-title {
+    min-width: 285px;
+    max-width: 50%;
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .extra__characteristics-field {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .extra__characteristics-name {
+    min-width: 192px;
+    max-width: 24%;
+
+    text-align: right;
+  }
+
+  .extra__characteristics-price {
+    width: 95px;
+    max-width: 24%;
+
+    text-align: right;
+  }
+
+  .extra__order {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    margin-bottom: 85px;
+  }
+
+  .extra__title-layout {
+    padding-top: 11px;
+  }
+
+  .extra__title-wrap {
+    padding-left: 0;
+  }
+
+  .extra__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    // outline: 1px solid tomato;
+  }
+
+  .extra__list {
+    width: 74%;
+    margin-bottom: 0;
+  }
+
+  .extra__item {
+    flex-direction: row;
+    // justify-content: space-between;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 15px;
+
+    border-right: none;
+    border-left: none;
+  }
+
+  .extra__characteristics {
+    align-items: center;
+    width: 68%;
+    margin-bottom: 0;
+
+    // outline: 1px solid green;
+  }
+
+  .extra__characteristics-title {
+    min-width: 245px;
+  }
+
+  .extra__characteristics-field {
+    width: 285px;
+    // margin-left: auto;
+
+    // outline: 1px solid blue;
+  }
+
+  .extra__characteristics-name {
+    width: auto;
+
+    text-align: left;
+  }
+
+  .extra__characteristics-price {
+    max-width: 30%;
+    text-align: left;
+  }
+
+  .extra__order {
+    max-width: 245px;
+    margin-left: auto;
+  }
+}

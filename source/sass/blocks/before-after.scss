@@ -1,0 +1,145 @@
+.before-after {
+  color: $black-two;
+
+  background-color: $white-two;
+}
+
+.before-after__wrapper {
+  padding-top: 21px;
+}
+
+.before-after__title {
+  margin-bottom: 23px;
+
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.before-after__descr {
+  max-width: 674px;
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white-twoish-brown;
+}
+
+.before-after__results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.before-after__list {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.before-after__group {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 44%;
+  max-width: 162px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border: 1px solid $very-light-pink-three;
+}
+
+.before-after__group:first-child {
+  margin-right: auto;
+}
+
+.before-after__value {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.before-after__name {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+
+  width: 84px;
+  max-width: 87px;
+  margin: 0;
+  padding-right: 7px;
+  padding-left: 7px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $white-twoish-brown;
+
+  background-color: $white-two;
+
+  transform: translateX(-50%);
+}
+
+.before-after__spend {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .before-after__title {
+    margin-bottom: 63px;
+  }
+
+  .before-after__results {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .before-after__list {
+    max-width: 384px;
+    margin-bottom: 0;
+  }
+
+  .before-after__group:first-child {
+    margin-right: 41px;
+  }
+
+  .before-after__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .before-after__descr {
+    max-width: 100%;
+    margin-bottom: 56px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .before-after__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .before-after__name {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .before-after__spend {
+    max-width: 192px;
+
+    font-size: 20px;
+    text-align: right;
+  }
+}

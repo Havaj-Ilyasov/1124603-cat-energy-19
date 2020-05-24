@@ -1,0 +1,19 @@
+.wrapper {
+  // width: 270px;
+  width: 87%;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    // width: 708px;
+    width: 92%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    width: 84%;
+    max-width: 1220px;
+  }
+}
