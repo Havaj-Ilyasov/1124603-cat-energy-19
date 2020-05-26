@@ -1,11 +1,5 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-// var slide = document.querySelector(".slide");
-
-// window.onmousemove = function (e) {
-//   var x = e.clientX;
-//   slide.style.left = x + "px";
-// }
 
 navMain.classList.remove('main-nav--nojs');
 

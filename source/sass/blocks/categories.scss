@@ -56,14 +56,14 @@
   width: 50px;
   height: 51px;
 
-  background-image: url("../../img/icon-cat-slim.svg");
+  background-image: url("../img/icon-cat-slim.svg");
 }
 
 .categories__icon--pro::before {
   width: 67px;
   height: 28px;
 
-  background-image: url("../../img/icon-cat-pro.svg");
+  background-image: url("../img/icon-cat-pro.svg");
 }
 
 .categories__title {
@@ -126,7 +126,7 @@
   width: 25px;
   height: 12px;
 
-  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
 }
 
@@ -237,6 +237,6 @@
   .categories__link-wrap:focus .categories__link-arrow {
     width: 35px;
 
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
 }
 }
