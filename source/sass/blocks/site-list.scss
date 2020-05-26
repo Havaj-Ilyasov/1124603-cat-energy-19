@@ -35,6 +35,10 @@
   text-decoration: none;
 }
 
+.site-list__link--active {
+  cursor: default;
+}
+
 .site-list__link--active::after {
   content: "";
 
@@ -136,7 +140,16 @@
     opacity: 0.6;
   }
 
+  .site-list__link--active:hover,
+  .site-list__link--active:focus {
+    opacity: 1;
+  }
+
   .site-list__link:active {
     opacity: 0.3;
+  }
+
+  .site-list__link--active:active {
+    opacity: 1;
   }
 }

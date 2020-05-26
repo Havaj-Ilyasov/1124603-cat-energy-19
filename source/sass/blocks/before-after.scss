@@ -9,10 +9,7 @@
 }
 
 .before-after__title {
-  margin-bottom: 23px;
-
-  font-size: 36px;
-  line-height: 60px;
+  margin-bottom: 33px;
 }
 
 .before-after__descr {
@@ -30,6 +27,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 36px;
 }
 
 .before-after__list {
@@ -94,7 +92,101 @@
   text-transform: uppercase;
 }
 
+.before-after__example {
+  padding-bottom: 40px;
+
+  // outline: 1px solid tomato;
+}
+
+.before-after__slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.before-after__slide {
+  display: flex;
+  justify-content: center;
+  // width: 100%;
+  margin-bottom: 32px;
+}
+
+.before-after__slide--after {
+  display: none;
+}
+
+.before-after__example-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 63%;
+  margin: 0 auto;
+
+  // outline: 1px solid red;
+}
+
+.before-after__button {
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black-two;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.before-after__button--before {
+  margin-right: 20px;
+}
+
+.before-after__button--after {
+  order: 1;
+}
+
+.before-after__example-progress {
+  width: 40%;
+  margin-right: 20px;
+}
+
+.before-after__example-scale {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 14px;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  border: 1px solid $very-light-pink-three;
+  border-radius: 6px;
+}
+
+.before-after__example-indicator {
+  width: 50%;
+  height: 6px;
+
+  background-color: $leaf;
+  border-radius: 6px;
+}
+
+.before-after__example-indicator:active::after,
+.before-after__example-indicator:active::after {
+  content: "";
+}
+
+.before-after__example-control {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+  .before-after {
+    background-color: $white;
+  }
+
   .before-after__title {
     margin-bottom: 63px;
   }
@@ -113,17 +205,16 @@
     margin-right: 41px;
   }
 
-  .before-after__title {
-    font-size: 60px;
-    line-height: 60px;
-  }
-
   .before-after__descr {
     max-width: 100%;
     margin-bottom: 56px;
 
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .before-after__results {
+    margin-bottom: 86px;
   }
 
   .before-after__value {
@@ -134,6 +225,8 @@
   .before-after__name {
     font-size: 14px;
     line-height: 14px;
+
+    background-color: $white;
   }
 
   .before-after__spend {
@@ -141,5 +234,152 @@
 
     font-size: 20px;
     text-align: right;
+  }
+
+  .before-after__button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    font-size: 20px;
+
+    border-bottom: 1px dotted $border-btn;
+  }
+
+  .before-after__example {
+    padding-bottom: 72px;
+
+    background: linear-gradient(to bottom,$white 170px,$white-two 10px);
+  }
+
+  .before-after__slide {
+    margin-bottom: 18px;
+  }
+
+  .before-after__example-controls {
+    width: auto;
+    margin: 0;
+  }
+
+  .before-after__example-progress {
+    width: 428px;
+  }
+
+  .before-after__example-scale {
+    width: 100%;
+    height: 6px;
+    padding: 0;
+    justify-content: center;
+
+    background-color: #dcdcdc;
+  }
+
+  .before-after__example-indicator {
+    position: relative;
+
+    width: 34px;
+    height: 34px;
+
+    background-color: $white;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+  }
+
+  .before-after__example-indicator::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: $leaf;
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .before-after {
+    background: linear-gradient(to bottom, $white 160px,$white-two 10px);
+  }
+
+  .before-after__layout {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 84%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-bottom: 75px;
+  }
+
+  .before-after__wrapper {
+    width: auto;
+    max-width: auto;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .before-after__title {
+    margin-bottom: 142px;
+  }
+
+  .before-after__descr {
+    max-width: 430px;
+    margin-bottom: 71px;
+  }
+
+  .before-after__results {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 365px;
+    margin-bottom: 0;
+  }
+
+  .before-after__name {
+    background-color: $white-two;
+  }
+
+  .before-after__list {
+    margin-bottom: 62px;
+  }
+
+  .before-after__spend {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+
+    text-align: center;
+  }
+
+  .before-after__example {
+    padding-bottom: 0;
+
+    background: none;
+  }
+
+  .before-after__example-indicator::after {
+    content: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid $leaf;
+    border-radius: 50%;
+  }
+
+  .before-after__example-indicator:focus,
+  .before-after__example-indicator:hover {
+    box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
   }
 }
