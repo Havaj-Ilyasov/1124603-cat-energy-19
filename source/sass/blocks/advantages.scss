@@ -100,7 +100,7 @@
     margin-left: auto;
   }
 
-  .advantages__item:nth-last-child(-n+2) {
+  .advantages__item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
 
@@ -156,14 +156,15 @@
     padding-right: 0;
   }
 
- .advantages__list {
-   justify-content: space-between;
- }
+  .advantages__list {
+    justify-content: space-between;
+  }
 
   .advantages__item {
     width: 20%;
     margin-bottom: 0;
   }
+
   .advantages__item:nth-child(2n) {
     margin-left: 0;
   }
