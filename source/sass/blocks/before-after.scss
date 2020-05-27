@@ -128,6 +128,7 @@
 .before-after__button {
   padding: 0;
 
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -173,7 +174,6 @@
   border-radius: 6px;
 }
 
-.before-after__example-indicator:active::after,
 .before-after__example-indicator:active::after {
   content: "";
 }
@@ -194,6 +194,7 @@
   .before-after__results {
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 86px;
   }
 
   .before-after__list {
@@ -211,10 +212,6 @@
 
     font-size: 16px;
     line-height: 24px;
-  }
-
-  .before-after__results {
-    margin-bottom: 86px;
   }
 
   .before-after__value {
@@ -248,7 +245,7 @@
   .before-after__example {
     padding-bottom: 72px;
 
-    background: linear-gradient(to bottom,$white 170px,$white-two 10px);
+    background: linear-gradient(to bottom, $white 170px, $white-two 10px);
   }
 
   .before-after__slide {
@@ -281,7 +278,7 @@
 
     background-color: $white;
     border-radius: 50%;
-    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
     cursor: pointer;
   }
@@ -305,7 +302,7 @@
 
 @media (min-width: $desktop-width) {
   .before-after {
-    background: linear-gradient(to bottom, $white 160px,$white-two 10px);
+    background: linear-gradient(to bottom, $white 160px, $white-two 10px);
   }
 
   .before-after__layout {
@@ -380,6 +377,6 @@
 
   .before-after__example-indicator:focus,
   .before-after__example-indicator:hover {
-    box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
   }
 }
