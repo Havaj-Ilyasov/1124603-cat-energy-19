@@ -27,6 +27,7 @@
 .site-list__link {
   position: relative;
 
+  font-family: "Oswald", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
@@ -63,6 +64,10 @@
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .site-list {
     display: none;
+  }
+
+  .main-nav--nojs .site-list {
+    display: flex;
   }
 
   .main-nav--opened .site-list {
